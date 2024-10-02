@@ -3,14 +3,13 @@ import './App.css';
 
 function App() {
   let display = "off";
-  const pStyle = {backgroundColor: 'yellow', color: 'green'};
   return (
-
     <div className="App">
       {display === "on" ? (
         <div>
           <h1>아메리카노</h1>
-          <p style={pStyle}>3000원</p> 
+          <p className="pStyle">3000원</p> 
+          <button>버튼</button>
         </div>
       ) : (
         <>

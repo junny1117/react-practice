@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import UseEffect01 from './chap07/UseEffect01';
+import UseEffect01 from './jsx/UseEffect01';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

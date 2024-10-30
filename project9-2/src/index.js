@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import CleanUP from './jsx/CleanUP';
 import reportWebVitals from './reportWebVitals';
-import Login from './jsx/Login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Login />
+    <CleanUP />
   </React.StrictMode>
 );
 

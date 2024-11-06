@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Login from './jsx/Login';
 import reportWebVitals from './reportWebVitals';
-import LoginControl from './jsx/LoginControl';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LoginControl/>
+    <Login />
   </React.StrictMode>
 );
 

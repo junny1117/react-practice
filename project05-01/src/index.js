@@ -3,19 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ConfirmDialog from './components/ConfirmDialog';
 
-function tick() {
-  const element = (
-    <div>
-      <h1>안녕, 리엑트</h1>
-      <h2>현재시간: {new Date().toLocaleTimeString()}</h2>
-    </div>
-  );
-  const root = ReactDOM.createRoot(document.getElementById('root'));
-  root.render(element);
-}
-
-setInterval(tick, 1000);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <ConfirmDialog />
+  </React.StrictMode>
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

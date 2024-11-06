@@ -1,13 +1,13 @@
-import React from 'react';
-
-function Menu() {
-  return (
-    <nav className="Menu">
-      <a href="http://www.naver.com">네이버</a> |
-      <a href="http://www.google.com">구글</a> |
-      <a href="http://openai.com">오픈AI</a>
-    </nav>
-  );
-}
-
+import React from "react";
+const Menu = () => {
+const style = {
+border: "1px solid gray",
+};
+return (
+<div style={style}>
+<h1>아메리카노</h1>
+<p>3500원</p>
+</div>
+);
+};
 export default Menu;

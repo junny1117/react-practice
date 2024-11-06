@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './jsx/MyApp';
 import reportWebVitals from './reportWebVitals';
+import UseEffect01 from './jsx/UseEffect01';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <UseEffect01 />
   </React.StrictMode>
 );
 

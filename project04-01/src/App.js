@@ -1,11 +1,12 @@
-import Menu from "./components/Menu";
-import MenuOff from "./components/MenuOff"
+import logo from './logo.svg';
+import './App.css';
+import Hello from "./components/Hello";
+import Welcome from "./components/Welcome";
 function App() {
-  let display = 'on'
 return (
-  <div className="App">
-    {
-    display==='on'?<Menu/> : <MenuOff/>}
+<div>
+<Hello />
+<Welcome />
 </div>
 );
 }

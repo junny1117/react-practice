@@ -1,19 +1,13 @@
-import React from 'react';
-import './App.css';
-import Menu from './components/Menu';
-import Contents from './components/Contents';
-import BookReview from './components/BookReview';
-import Image from './components/Image';
-
+import Menu from "./components/Menu";
+import MenuOff from "./components/MenuOff"
 function App() {
-  return (
-    <div className="App">
-      <Menu />
-      <Contents />
-      <BookReview />
-      <Image />
-    </div>
-  );
+  let display = 'on'
+return (
+  <div className="App">
+    {
+    display==='on'?<Menu/> : <MenuOff/>}
+</div>
+);
 }
 
 export default App;

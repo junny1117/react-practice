@@ -1,13 +1,8 @@
-
 .App {
-  width: 800px;
-  height: 180px;
-  border: 1px solid gray;
-  margin: 10px;
+  text-align: center;
 }
 
 .pStyle {
-  background-color:'yellow';
-  size: 24px;
+  background-color:'lightblue';
   color:green
 }

@@ -1,23 +1,30 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 
 function UseRef() {
-    const countRef = useRef(0);
-    const [cnt, setCnt] = useState(0);
+    const [name, setName] = useState('');
+    const inputRef = useRef(null);
 
-    const increase = () => {
-        countRef.current += 1;
-        console.log(`countRef: ${countRef.current}`);
+    useEffect(() => {
+        console.log(inputRef.current);
+    }, []);
 
-        if (countRef.current >= 10) {
-            setCnt(countRef.current);
-        }
+    const focusInput = () => {
+        inputRef.current.focus();
+        alert(`welcome, ${name}!`);
     };
 
     return (
         <div>
-            <p>useRef 변수: {countRef.current}</p>
-            <button onClick={increase}>클릭</button>
-            <p>cntState 변수: {cnt}</p>
+            <p>useRef 함수는 DOM 요소에 직접 접근 가능</p>
+            <p>포커싱 구현</p>
+            <input
+                type='text'
+                value={name}
+                placeholder='이름 입력'
+                ref={inputRef}
+                onChange={(e) => setName(e.target.value)}
+            />
+            <button onClick={focusInput}>로그인</button>
         </div>
     );
 }

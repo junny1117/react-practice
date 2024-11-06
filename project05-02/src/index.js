@@ -3,17 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Clock from './components/Clock';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+function tick() {
+  const element = (
+    <div>
+      <h1>안녕, 리엑트</h1>
+      <h2>현재시간: {new Date().toLocaleTimeString()}</h2>
+    </div>
+  );
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(element);
+}
 
-setInterval(() => {
-    root.render(
-        <React.StrictMode>
-            <Clock />
-        </React.StrictMode>
-    );
-}, 1000);
+setInterval(tick, 1000);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

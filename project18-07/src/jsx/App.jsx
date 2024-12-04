@@ -21,6 +21,10 @@ function App() {
         setContent(""); 
     };
 
+    const handleDeleteCard = (index) => {
+        setCards(cards.filter((_, i) => i !== index));
+    };
+
     return (
         <div style={{ padding: 16 }}>
             <h1>할일 추가하기</h1>
@@ -71,6 +75,19 @@ function App() {
                         backgroundColor={card.backgroundColor}
                     >
                         <p>{card.content}</p>
+                        <button
+                            onClick={() => handleDeleteCard(index)}
+                            style={{
+                                padding: 8,
+                                backgroundColor: "#FF6347",
+                                color: "white",
+                                border: "none",
+                                borderRadius: 4,
+                                cursor: "pointer",
+                            }}
+                        >
+                            삭제
+                        </button>
                     </Card>
                 ))}
             </div>
